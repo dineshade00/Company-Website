@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">ChatGPT Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">Service 1</a></li>
+                            <li><a class="dropdown-item" href="#">Service 2</a></li>
+                            <li><a class="dropdown-item" href="#">Service 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero sections  -->
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active"
+                style="background-image: url('https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=100%');">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+                    <h1>Slide 1 Heading</h1>
+                    <p>Slide 1 text line 1</p>
+                    <p>Slide 1 text line 2</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-item"
+                style="background-image: url('https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=100%');">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+                    <h1>Slide 2 Heading</h1>
+                    <p>Slide 2 text line 1</p>
+                    <p>Slide 2 text line 2</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-item"
+                style="background-image: url('https://images.pexels.com/photos/1097930/pexels-photo-1097930.jpeg?auto=compress&cs=tinysrgb&w=100%');">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+                    <h1>Slide 3 Heading</h1>
+                    <p>Slide 3 text line 1</p>
+                    <p>Slide 3 text line 2</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- about section  -->
+
+    <div class="container about-section">
+        <div class="row align-items-center">
+            <!-- Left Side: Tabs -->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h2>About Us</h2>
+                <!-- Tabs Navigation -->
+                <ul class="nav nav-tabs border-0" id="aboutTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="company-tab" data-bs-toggle="tab" data-bs-target="#company"
+                            type="button" role="tab" aria-controls="company" aria-selected="true">Our Company</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission"
+                            type="button" role="tab" aria-controls="mission" aria-selected="false">Our Mission</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision"
+                            type="button" role="tab" aria-controls="vision" aria-selected="false">Our Vision</button>
+                    </li>
+                </ul>
+                <!-- Tabs Content -->
+                <div class="tab-content mt-4" id="aboutTabsContent">
+                    <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+                        <p>Our company has a rich history of delivering exceptional products and services to our
+                            customers. We pride ourselves on innovation and quality.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                        <p>Our mission is to continuously exceed customer expectations by providing top-notch solutions
+                            that add value to their businesses and lives.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                        <p>Our vision is to be a global leader in our industry, setting standards for excellence and
+                            integrity in everything we do.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side: Image -->
+            <div class="col-lg-6">
+                <img src="https://media.istockphoto.com/id/1811488202/photo/a-businessman-having-presentation-with-colleagues-about-project-he-working-on-at-the-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=DZHU729twT4HiZfAAJyM7W54hM9VhoXHIyUPN2qSQQc="
+                    alt="About Us Image" class="about-image">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- services section  -->
+
+    <div class="container services-section">
+        <!-- Section Heading -->
+        <h2>Our IT Services</h2>
+        <p class="lead">Explore our wide range of IT services designed to enhance your business operations and drive growth through technology.</p>
+        
+        <!-- Services Boxes -->
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-box">
+                    <i class="bi bi-cloud"></i> <!-- Cloud Computing Icon -->
+                    <h4>Cloud Computing</h4>
+                    <p>Harness the power of the cloud to scale your business, improve efficiency, and reduce costs with.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-box">
+                    <i class="bi bi-shield-lock"></i> <!-- Cybersecurity Icon -->
+                    <h4>Cybersecurity</h4>
+                    <p>Protect your digital assets and secure your network with our comprehensive cybersecurity services.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-box">
+                    <i class="bi bi-graph-up"></i> <!-- Data Analytics Icon -->
+                    <h4>Data Analytics</h4>
+                    <p>Leverage data-driven insights to make informed decisions and drive business growth with our.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-box">
+                    <i class="bi bi-code-slash"></i> <!-- Software Development Icon -->
+                    <h4>Software Development</h4>
+                    <p>Get custom software solutions tailored to your business needs, from web applications to Apps.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-box">
+                    <i class="bi bi-laptop"></i> <!-- IT Consulting Icon -->
+                    <h4>IT Consulting</h4>
+                    <p>Optimize your IT infrastructure and strategy with our expert consulting services.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-box">
+                    <i class="bi bi-gear"></i> <!-- Managed IT Services Icon -->
+                    <h4>Managed IT Services</h4>
+                    <p>Outsource your IT management to us and focus on your core business while we handle the tech.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- projects section  -->
+
+
+
+    <div class="container projects-section">
+        <!-- Section Heading -->
+        <h2>Our Projects</h2>
+    
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="projectTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="apps-tab" data-bs-toggle="tab" data-bs-target="#apps" type="button" role="tab" aria-controls="apps" aria-selected="false">Apps</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="products-tab" data-bs-toggle="tab" data-bs-target="#products" type="button" role="tab" aria-controls="products" aria-selected="false">Products</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="website-tab" data-bs-toggle="tab" data-bs-target="#website" type="button" role="tab" aria-controls="website" aria-selected="false">Website</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="branding-tab" data-bs-toggle="tab" data-bs-target="#branding" type="button" role="tab" aria-controls="branding" aria-selected="false">Branding</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing" type="button" role="tab" aria-controls="marketing" aria-selected="false">Marketing</button>
+            </li>
+        </ul>
+    
+        <!-- Tab Content -->
+        <div class="tab-content" id="projectTabsContent">
+            <!-- All Projects -->
+            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Project 1">
+                            <div class="overlay">
+                                <h5>Project 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-middle">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1568152653-49eabf13e68b?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Project 2">
+                            <div class="overlay">
+                                <h5>Project 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-bottom">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1519337268970-4c8e0d8b30e4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Project 3">
+                            <div class="overlay">
+                                <h5>Project 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more project items as needed -->
+                </div>
+            </div>
+    
+            <!-- Apps Projects -->
+            <div class="tab-pane fade" id="apps" role="tabpanel" aria-labelledby="apps-tab">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="App Project 1">
+                            <div class="overlay">
+                                <h5>App Project 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-middle">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1568152653-49eabf13e68b?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="App Project 2">
+                            <div class="overlay">
+                                <h5>App Project 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-bottom">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1519337268970-4c8e0d8b30e4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="App Project 3">
+                            <div class="overlay">
+                                <h5>App Project 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more project items as needed -->
+                </div>
+            </div>
+    
+            <!-- Products Projects -->
+            <div class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="products-tab">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Product Project 1">
+                            <div class="overlay">
+                                <h5>Product Project 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-middle">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1580872155361-90fd5b39144c?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Product Project 2">
+                            <div class="overlay">
+                                <h5>Product Project 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-bottom">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1587264377874-32a4a4ccf1a4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Product Project 3">
+                            <div class="overlay">
+                                <h5>Product Project 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more project items as needed -->
+                </div>
+            </div>
+    
+            <!-- Website Projects -->
+            <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1601977761364-d0e3710d49d4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Website Project 1">
+                            <div class="overlay">
+                                <h5>Website Project 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-middle">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1580894734001-4581d10d8c52?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Website Project 2">
+                            <div class="overlay">
+                                <h5>Website Project 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-bottom">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Website Project 3">
+                            <div class="overlay">
+                                <h5>Website Project 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more project items as needed -->
+                </div>
+            </div>
+    
+            <!-- Branding Projects -->
+            <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Branding Project 1">
+                            <div class="overlay">
+                                <h5>Branding Project 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-middle">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1580872155361-90fd5b39144c?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Branding Project 2">
+                            <div class="overlay">
+                                <h5>Branding Project 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-bottom">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1587264377874-32a4a4ccf1a4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Branding Project 3">
+                            <div class="overlay">
+                                <h5>Branding Project 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more project items as needed -->
+                </div>
+            </div>
+    
+            <!-- Marketing Projects -->
+            <div class="tab-pane fade" id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1580894734001-4581d10d8c52?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Marketing Project 1">
+                            <div class="overlay">
+                                <h5>Marketing Project 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-middle">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1568152653-49eabf13e68b?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Marketing Project 2">
+                            <div class="overlay">
+                                <h5>Marketing Project 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 row-bottom">
+                        <div class="project-item">
+                            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvcmt8ZW58MHx8fDE2MzI2NTU4Mjk&ixlib=rb-1.2.1&q=80&w=400" alt="Marketing Project 3">
+                            <div class="overlay">
+                                <h5>Marketing Project 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more project items as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+                     
+<!-- contact form section  -->
+
+
+
+<div class="container contact-section">
+    <!-- Section Heading -->
+    <h2>Contact Us</h2>
+
+    <div class="row">
+        <!-- Contact Form -->
+        <div class="col-lg-6 col-md-12">
+            <div class="contact-form">
+                <h3>Contact Form</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="col-lg-6 col-md-12">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.9872989930744!2d-122.41941848468128!3d37.77492927975887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e9e3b7a9d%3A0x25d6b39148990d91!2sSan%20Francisco%2C%20CA%2094104%2C%20USA!5e0!3m2!1sen!2sin!4v1634852900935!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- footer bar section  -->
+
+<!-- Footer Section -->
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>1234 Street Name, City, Country</p>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Our Projects</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Social Media -->
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="bi bi-facebook" title="Facebook"></a>
+                    <a href="#" class="bi bi-twitter" title="Twitter"></a>
+                    <a href="#" class="bi bi-linkedin" title="LinkedIn"></a>
+                    <a href="#" class="bi bi-instagram" title="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="mt-4">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<!-- end footer here  -->
+    <script src="app.js"></script>
+    <!-- Bootstrap JS (necessary for the dropdown) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

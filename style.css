@@ -1,0 +1,353 @@
+body {
+    background-color: whitesmoke;
+}
+
+/* navbar style  */
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+
+
+/* hero section  */
+
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black overlay */
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+.carousel-caption h1 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 3;
+}
+
+
+
+/* About Section  */
+
+.about-section {
+    padding: 80px 0;
+    /* background-color: #f8f9fa; */
+}
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+    color: #343a40;
+}
+.about-section h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+}
+.nav-tabs .nav-link {
+    font-weight: 600;
+    color: #ff1100;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.nav-tabs .nav-link.active {
+    background-color: #00ccff;
+    color: #fff;
+    border-radius: 0px;
+}
+.nav-tabs .nav-link:hover {
+    background-color: #6e03fadc;
+    color: #fff;
+    border-radius: 0px;
+}
+.tab-content p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+.tab-content .btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+.tab-content .btn:hover {
+    background-color: #0056b3;
+}
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+/* services section  */
+
+.services-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.services-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #343a40;
+}
+.services-section p.lead {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+.service-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+.service-box i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.service-box h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+.service-box p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+.service-box .btn {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+.service-box .btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* project section  */
+.projects-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.projects-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #343a40;
+}
+.projects-section .nav-tabs {
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.projects-section .nav-link {
+    color: #6c757d;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    /* border-radius: 30px; */
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.projects-section .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
+.projects-section .nav-link:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+.project-item {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.project-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.project-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+.project-item:hover img {
+    transform: scale(1.1);
+}
+.project-item:hover .overlay {
+    opacity: 1;
+}
+.row-middle img {
+    margin-top: -20px;
+}
+.row-bottom img {
+    margin-top: 20px;
+
+    
+}
+
+
+
+/* contact us  */
+.contact-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #343a40;
+}
+.contact-form, .map-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.contact-form .form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+}
+.contact-form .btn-primary {
+    border-radius: 0.5rem;
+    background-color: #007bff;
+    border: none;
+}
+.contact-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+.map-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+@media (max-width: 768px) {
+    .map-container {
+        height: 300px;
+    }
+}
+
+
+/* footer style / */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.footer p {
+    margin-bottom: 10px;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer a:hover {
+    color: #adb5bd;
+}
+.footer .social-icons a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.footer .social-icons a:hover {
+    color: #adb5bd;
+}
